@@ -1,0 +1,262 @@
+/* Google fonts (Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/* universal css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* selection */
+::selection {
+    background-color: #FF9000;
+    color: #fff;
+}
+
+
+/* navbar */
+/* navbar */
+
+.nav__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 38px 8vw;
+    animation: top 1s 1;
+}
+
+@keyframes top {
+    0%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* nav links */
+.nav__links {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav__links>a {
+    color: #656565;
+    font-size: 18px;
+    transition: .3s color;
+}
+
+.nav__links>a:hover {
+    color: #FF9000;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.btn {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 139%;
+    width: fit-content;
+    padding: 10px 36px;
+    color: #fff;
+    border-radius: 5px;
+    background: #FF9000;
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.10), 1px 1px 5px 2px rgba(0, 0, 0, 0.10) inset;
+    transition: .3s background;
+}
+
+.btn:nth-child(2) {
+    color: #FF9000;
+    border: 2px solid #FF9000;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.btn:nth-child(2):hover {
+    color: #fff;
+    background: #FF9000;
+}
+
+/* hero section */
+/* hero section */
+
+.hero__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 14vw;
+    gap: 4vw;
+    min-height: 80vh;
+}
+
+/* hero__content */
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero__img {
+    width: 600px;
+}
+
+.hero__img img {
+    width: 100%;
+}
+
+.heading {
+    max-width: 484px;
+    color: #212E41;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 120.5%;
+}
+
+.heading span {
+    color: #FF9000;
+}
+
+.price {
+    color: #212E41;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120.5%;
+}
+
+.price span {
+    color: #9097A0;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120.5%;
+    text-decoration: line-through;
+}
+
+.paragraph {
+    max-width: 472px;
+    color: #656565;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+
+/* product section */
+/* product section */
+
+.product__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 14vw;
+}
+
+.product__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+/* products */
+/* products */
+.products {
+    padding: 44px 14vw;
+    background-color: #FF9000;
+    display: flex;
+    gap: 14vw;
+}
+
+.products img {
+    cursor: pointer;
+}
+
+
+/* newslatter */
+/* newslatter */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+    justify-content: center;
+    background: #212E41;
+    height: 350px;
+}
+
+.subheading {
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 139%;
+}
+
+.newsletter .btn {
+    width: fit-content;
+    padding: 20px 36px;
+    color: #fff;
+    border-radius: 5px;
+    background: #FF9000;
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.10), 1px 1px 5px 2px rgba(0, 0, 0, 0.10) inset;
+    transition: .3s background;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.input input {
+    color: #C4C4C4;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 139%;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    width: 580px;
+    padding: 20px 30px;
+}
+
+.input input::placeholder {
+    color: #C4C4C4;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 139%;
+}
+
+
+/* footer */
+/* footer */
+
+.footer {
+    background-color: #212E41;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 6vw;
+}
+
+.footer span {
+    color: #656565;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1.4px;
+}
